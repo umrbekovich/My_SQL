@@ -467,7 +467,11 @@ where price > 50
 
 select * from products
 where price < all (select avg(price)*0.1 as avarageprice from products)
+    
+--task24
 
+select * from Employees
+where Age < 30 and Departmentname ='it' or Departmentname ='hr'
 --task25
 
 select * from customers
